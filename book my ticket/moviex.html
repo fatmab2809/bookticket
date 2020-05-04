@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Book My Tickets</title>
+	<link rel="stylesheet" type="text/css" href="movie.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <header id="home">
+      <div class="title"><a href="#home">Book My Ticket</a></div>
+      <div class="header-list">
+        <p><a href="#sign up">Sign Up</a></p>
+         <p>Gift cards</p>
+		<p><a href="#movie">Movies</a></p>
+         <p>Sports</p>
+       </div>
+    </header>
+   <main >
+     <div class="movies">
+       <h2 id="movie">Movies</h2>
+       <h2><span>Now Showing</span></h2>
+     </div>
+	 <br>
+     <div class="contents">
+		<figure class="items"> 
+		  <a href="./moviex02.html" > <img src="img/mulan.jpg" alt="Mulan"/>
+		  <figcaption>Mulan</figcaption></a>
+		</figure>
+        <figure class="items">
+         <a href="./moviex02.html" > <img src="img/onward.jpg">
+         <figcaption>Onward</figcaption></a>
+		</figure>
+        <figure class="items">
+		  <a href="./moviex02.html" > <img src="img/joker.png"/>
+          <figcaption>Joker</figcaption></a>
+		</figure>
+        <figure class="items">
+			<a href="./moviex02.html" > <img src="img/toy story 4.jpg">
+            <figcaption>Toy Story 4</figcaption></a>
+		</figure>
+     </div>            
+	 <br>
+	 
+     <form action="moviex.html" method="POST" >
+       <h2 id="sign up">Sign Up</h2>
+       <p>Name</p>
+       <input type="text" name="username" required>
+       <p>Email Id:</p>
+       <input type="email" name="email" required>
+       <p>Password:</p>
+       <label for="password"></label>
+       <input type="password" id="password" name="password" min=8 max=20 required>
+       <br>
+       <input class="send" type="submit" value="Sign Up" onclick="signup()">
+      <script>
+	  function signup(){
+	  alert("Signed in");
+	  }
+	  </script>
+     </form>
+    </main>
+    <footer>
+        <ul>
+          <li>Contact Us<br><br>
+		  <a href='https://twitter.com/' target="_blank">&nbsp<i class="fab fa-twitter fa-2x"></i></a>
+          <a href='https://facebook.com/' target="_blank">&nbsp<i class="fab fa-facebook fa-2x"></i></a>
+		  <a href='https://instagram.com/' target="_blank">&nbsp<i class="fab fa-instagram fa-2x"></i></a>
+		  </li>
+		  <li>About Us</li>
+          <li>Help</li>
+        </ul>
+    </footer>
+  </body>
+</html>

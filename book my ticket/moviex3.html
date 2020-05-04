@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Tickets</title>
+	<link rel="stylesheet" type="text/css" href="movie02.css">
+  </head>
+  <body>
+    <header>
+      <div class="title"><a href="file:///C:/Users/hp-pc/Desktop/book%20my%20ticket/moviex.html#home">Book My Ticket</a></div>
+      <div class="header-list">
+        <p><a href="file:///C:/Users/hp-pc/Desktop/book%20my%20ticket/moviex.html#sign%20up" >Sign Up</a></p>
+          <p>Gift cards</p>
+				<p><a href="file:///C:/Users/hp-pc/Desktop/book%20my%20ticket/moviex.html#movie">Movies</a></p>
+          <p>Sports</p>
+       </div>
+    </header>
+	<main class="num_and_type">
+	<form action="payment.html" method="GET" id="payment">
+	<label for="num">How many tickets do you want to buy?</label>
+	<input type="number" name="seat" id="num" step="1" min="1" max="15" ><br>
+	 <label for="type">Select the type of seat</label>
+	 <select id="type" name="seat_type" >
+	 <option value="premium">Premium- Rs.240</option>
+	 <option value="Executive">Executive- Rs.150</option>
+	 <option value="normal">Normal- Rs.120</option>
+	 </select><br>
+	<input type="submit" value="Pay Now" onclick="calcpay()" class="exit">
+	<script type="text/javascript">
+	const calcpay=function  ()
+	{	
+	var ticket, total, pay,seat_type;
+	ticket=document.getElementById("num").value;
+	seat_type=document.getElementById("type").value;
+	if(seat_type=="premium")
+	total=240;
+	else if(seat_type=="Executive")
+	total=150;
+	else
+	total=120;
+	
+	pay=total*ticket;
+	localStorage.setItem("money",pay);
+	return false;
+	}
+	</script>
+	</script>
+	</form>
+	</main>
+	<footer>
+      <div class="foot-list">
+        <ul>
+          <li>Contact Us</li>
+          <li>About Us</li>
+          <li>Help</li>
+        </ul>
+    </footer>
+  </body>
+</html>
