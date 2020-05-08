@@ -1,12 +1,12 @@
 body{
   font-family:"Open Sans";
-  height: 1010px;
+  height: 1300px;
   width: 1200px;
 }
 header{
   background-color:#0f0f3d;
   height:60px;
-  width:100%;
+  width: 1250px;
   color:white;
 }
 .title{
@@ -20,6 +20,8 @@ header{
   font-size:20px;
   padding:15px;
   color:white;
+  position:relative;
+  left:160px;
 }
 .header-list p{
   float:right;
@@ -32,11 +34,6 @@ a{
 	color:black;
   text-decoration:none;
 }
-.items img{
-	height:284px;
-	width:220px;
-	border: 1px solid black;
-}
 
 span{
 	font-size:20px;
@@ -45,25 +42,49 @@ main{
   height:95%;/*1000px*/
   width: 100%;
 }
-.movies{
-  height:100px;
-  width: 100%;
+.sidebar{
+  height:100%;
+  width: 160px;
   color:#293d3d;
+  position: fixed;
+  z-index:1;/*stay on top*/
+  /*leave no space on left*/
+  left:0;
+  top:0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
 }
-.movies h2{
- float:left;
+.sidebar h2{
+  color:white;
   padding: 20px;
 }
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
 .contents{
-  height:20%;/*200px*/
+  height:30%;/*200px*/
+  
   width: 100%;
   padding-left:20px;
-  margin-left:30px;
+  margin-left:50px;
+  
 }
 .items {
   float:left;
-  margin: 20px;  
+  margin: 50px; 
+position:relative;
+top:30px;
+   
 }
+.items img{
+	height:284px;
+	width:220px;
+	border: 1px solid black;
+}
+
 figcaption{
 	margin-top:20px;
 	text-align:center;
@@ -73,13 +94,14 @@ figcaption{
 	color:#660000;
 }
 form{
-	margin:5px;
-  
- padding:50px 100px 50px 50px;
- margin-top:200px;
+	margin-top:30px;
+  position:relative;
+  top:470px;
+ padding:30px 10px 10px 50px;
+ width:100%;
  color:#4d004d;
  background-color:#e0e0d1;
- width: 90%;
+ 
 }
 input{
 	height:30px;
@@ -99,8 +121,10 @@ i{
 }
 footer{
   background-color:#191966;
+  position:relative;
+  top:50px;
   color:white;
-  height:20%;/*100px*/
+  height:10%;/*100px*/
   width:100%;
   padding:20px;
   margin-top: 5%;
