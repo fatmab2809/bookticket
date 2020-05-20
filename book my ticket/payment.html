@@ -18,7 +18,7 @@
 	
 	</div>
 	<div class="bottom">
-	<form action="new_page.html" method="POST" onsubmit="return validate()">
+	<form action="new_page.html" method="POST" >
 	  <p>Pay with Credit/Debit Card</p>
 	  <div class="cardno">
 	  <label for="cardnum">Card Number</label><br>
@@ -26,7 +26,8 @@
 	  </div>
 	  <div class="expirydate">
 	  <label for="exp">Expiry Date</label><br>
-	  <input type="text" id="exp" name="exp-date" placeholder="mm/yy" pattern="[0-9/]+"  required>
+	  <input type="number" id="exp-mm" placeholder="mm" pattern="[0-9]" min="01" max="12" required>
+	  <input type="number" id="exp-yyyy" placeholder="yyyy" pattern="[0-9]" min="2020" max="2030" required>
 	  </div>
 	  <div class="cvv">
 	  <label for="cvv">CVV/CVC No.</label><br>
@@ -34,20 +35,12 @@
 	  </div>
 	  <div class="name">
 	  <label for="name">Card Holder Name</label><br>
-	  <input type="text" id="name" name="name" pattern="[A-Z]+" required>
+	  <input type="text" id="name" name="name" pattern="[A-Z\s]+" required>
 	  
-	  <input type="submit" value="Pay now" id="payment" onclick="pay()">
+	  <input type="submit" value="Pay now" id="payment" >
 	  </form>
 	  </div>
 	  
-	  <script type="text/javascript">
-	  function pay()
-	  {
-	  var mywindow;
-	   alert("Payment Successful");
-	   close();
-	   }
-	   </script>
 	   
   </div>
   </body>
