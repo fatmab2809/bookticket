@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="paystyle.css">
   </head>
   <body>
+  
   <div class="container">
     <div class="head">
     <p>---------PAYMENT---------</p>
@@ -14,8 +15,10 @@
 	<script type="text/javascript">
 	 document.getElementById('amt').innerHTML=localStorage.getItem("money");
 	</script>
+	
 	</div>
 	<div class="bottom">
+	<form action="new_page.html" method="POST" onsubmit="return validate()">
 	  <p>Pay with Credit/Debit Card</p>
 	  <div class="cardno">
 	  <label for="cardnum">Card Number</label><br>
@@ -23,7 +26,7 @@
 	  </div>
 	  <div class="expirydate">
 	  <label for="exp">Expiry Date</label><br>
-	  <input type="text" id="exp" name="exp-date" placeholder="mm/yy" pattern="[0-9/]+" max=5 min=5 required>
+	  <input type="text" id="exp" name="exp-date" placeholder="mm/yy" pattern="[0-9/]+"  required>
 	  </div>
 	  <div class="cvv">
 	  <label for="cvv">CVV/CVC No.</label><br>
@@ -32,18 +35,20 @@
 	  <div class="name">
 	  <label for="name">Card Holder Name</label><br>
 	  <input type="text" id="name" name="name" pattern="[A-Z]+" required>
+	  
+	  <input type="submit" value="Pay now" id="payment" onclick="pay()">
+	  </form>
 	  </div>
-	  <button class="pay-btn" id="pay" type="button" onclick="pay()">Pay Now</button>
+	  
 	  <script type="text/javascript">
 	  function pay()
 	  {
 	  var mywindow;
 	   alert("Payment Successful");
 	   close();
-	   myWindow = window.open("", "myWindow");
-	   myWindow.document.write("Go back to <a href='file:///C:/Users/hp-pc/Desktop/book%20my%20ticket/moviex.html#home'>Homepage</a>");
 	   }
 	   </script>
+	   
   </div>
   </body>
 </html>

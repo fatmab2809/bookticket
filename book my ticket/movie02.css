@@ -69,15 +69,16 @@ footer{
   height:80px;
   padding:20px;
 }
-.foot-list li {
+footer li {
   float:left;
   margin:10px;
   padding:10px 30px;
-  
+  list-style-type:none;
 }
 .num_and_type{
 	height:390px;
 	font-size:20px;
+	display:inline-block;
 }
 .num_and_type select{
 	font-size:20px;
