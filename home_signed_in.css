@@ -1,0 +1,117 @@
+body{
+  font-family:"Open Sans";
+  height: 1010px;
+  width: 1200px;
+}
+header{
+  background-color:#0f0f3d;
+  height:60px;
+  width:100%;
+  color:white;
+}
+.title{
+  float:left;
+  font-size:20px;
+  padding:15px;
+  color:white;
+  
+}
+.title a{
+  font-size:20px;
+  padding:15px;
+  color:white;
+}
+.header-list p{
+  display:inline-block;
+  float:right;
+  margin:20px;
+}
+.header-list a{
+  color:white;
+}
+a{
+	color:black;
+  text-decoration:none;
+}
+figure img{
+	height:284px;
+	width:220px;
+	border: 1px solid black;
+}
+
+span{
+	font-size:20px;
+}
+main{
+  height:95%;/*1000px*/
+  width: 100%;
+}
+.movies{
+  display:inline-block;
+  height:100px;
+  width: 100%;
+  color:#293d3d;
+}
+.movies h2{
+ float:left;
+  padding: 20px;
+}
+.contents{
+  height:20%;/*200px*/
+  width: 100%;
+  padding-left:20px;
+  margin-left:30px;
+}
+figure {
+  float:left;
+  margin: 20px;  
+}
+figcaption{
+	margin-top:20px;
+	text-align:center;
+	font-family:"Verdana";
+	font-size:20px;
+	font-weight:bold;
+	color:#660000;
+}
+form{
+	margin:5px;
+  clear:both;
+ padding:50px 100px 50px 50px;
+ margin-top:200px;
+ color:#4d004d;
+ background-color:#e0e0d1;
+ width: 90%;
+}
+input{
+	height:30px;
+	width:250px;
+  border:1px solid #003366;
+}
+.send{
+  font-family:"IBM Plex Sans";
+  font-size:18px;
+  margin-top:30px;
+  margin-left:70px;
+  background-color:#66b3ff;
+  color:black;
+}
+i{
+	color: ADD8E6;
+}
+footer{
+  clear:both;
+  background-color:#191966;
+  color:white;
+  height:20%;/*100px*/
+  width:100%;
+  padding:20px;
+  margin-top: 5%;
+}
+footer li {
+  float:left;
+  margin:5px;
+  padding:5px 30px;
+  list-style-type:none;
+  
+}

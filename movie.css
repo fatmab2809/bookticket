@@ -1,0 +1,138 @@
+body{
+  font-family:"Open Sans";
+  
+}
+header{
+  background-color:#0f0f3d;
+  height:70px;
+  width:100%;
+  color:white;
+}
+.title{
+  float:left;
+  font-size:20px;
+  padding:15px;
+  color:white;
+  
+}
+.title a{
+  font-size:20px;
+  padding:15px;
+  color:white;
+}
+
+.header-list p{
+  display:inline-block;
+  float:right;
+  margin:20px;
+  transition:background .2s linear;
+}
+.header-list a{
+  color:white;
+  transition:background .2s linear;
+}
+.header-list p:hover,.header-list a:hover{
+	background:#e6ecff;
+	color:black;
+	padding:5px;
+}
+
+a{
+	color:black;
+  text-decoration:none;
+}
+figure img{
+	height:284px;
+	width:220px;
+	border: 1px solid black;
+	transition:transform 1s;
+}
+figure img:hover{
+	transform:rotateY(180deg);
+}
+
+span{
+	font-size:20px;
+}
+
+.movies{
+  display:inline-block;
+  height:100px;
+  width: 100%;
+  color:#293d3d;
+}
+.movies h2{
+ float:left;
+  padding: 20px;
+}
+.contents{
+  height:20%;/*200px*/
+  width: 100%;
+  padding-left:20px;
+  margin-left:30px;
+}
+figure {
+	display:inline-block;
+  float:left;
+  margin: 20px;  
+}
+figcaption{
+	margin-top:20px;
+	text-align:center;
+	font-family:"Verdana";
+	font-size:20px;
+	font-weight:bold;
+	color:#660000;
+}
+form{
+	margin:20px;
+  clear:both;
+ padding:50px 100px 50px 50px;
+ margin-top:200px;
+ color:#4d004d;
+ background-color:#e0e0d1;
+ width: 90%;
+}
+input{
+	height:30px;
+	width:250px;
+  border:1px solid #003366;
+  transition: background .2s linear;
+}
+input:focus{
+	background:rgba(153, 179, 255,.6);
+}
+
+.send{
+  font-family:"IBM Plex Sans";
+  font-size:18px;
+  margin-top:30px;
+  margin-left:70px;
+  background-color:#66b3ff;
+  color:black;
+  transition:transform 0s;
+}
+.send:active{
+	transform:translateY(3px);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5);
+}
+i{
+	color: ADD8E6;
+}
+footer{
+	
+  clear:both;
+  background-color:#191966;
+  color:white;
+  height:20%;/*100px*/
+  width:100%;
+  padding:20px;
+  margin-top: 50px;
+}
+footer li {
+  float:left;
+  margin:5px;
+  padding:5px 30px;
+  list-style-type:none;
+  
+}

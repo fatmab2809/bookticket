@@ -1,0 +1,110 @@
+body{
+  font-family:"Open Sans"
+}
+header{
+  background-color:#0f0f3d;
+  height:60px;
+  color:white;
+}
+.title{
+  float:left;
+  font-size:20px;
+  padding:15px;
+  color:white;
+}
+.title a{
+  font-size:20px;
+  padding:15px;
+  color:white;
+}
+.header-list p{
+  display:inline-block;
+  float:right;
+  margin:20px;
+  transition:background .2s linear;
+}
+.header-list a{
+  color:white;
+  transition:background .2s linear;
+}
+.header-list p:hover,.header-list a:hover{
+	background:#e6ecff;
+	color:black;
+	padding:5px;
+}
+a{
+	color:black;
+  text-decoration:none;
+}
+main
+{
+  
+  height:600px;
+  padding-top:2px;
+  margin-left:30px;
+}
+.mall{
+	height:100px;
+  padding-left:20px;
+  margin-left:30px;
+	
+}
+.mall p,.mall span{
+text-align:center;
+font-family:"Verdana";
+font-size:20px;
+font-weight:bold;
+color: #cc0000;
+float:left;
+margin-top:2px;
+border:1px solid;
+padding:5px;
+margin-left:20px;
+}
+.mall a{
+	color: #cc0000;
+	padding:5px;
+	text-align:center;
+font-family:"Verdana";
+}
+.Pavillion,.Aundh ,.Cinepolis ,.INOX {
+	height:70px;
+	margin-top:30px;
+}
+footer{
+  background-color:#191966;
+  color:white;
+  height:80px;
+  padding:20px;
+}
+footer li {
+  float:left;
+  margin:10px;
+  padding:10px 30px;
+  list-style-type:none;
+}
+.num_and_type{
+	height:390px;
+	font-size:20px;
+	display:inline-block;
+}
+.num_and_type select{
+	font-size:20px;
+	margin:15px;
+}
+.num_and_type input{
+	font-size:20px;
+	margin:15px;
+}	
+.script{
+	font-size: 20px;
+	background-color: #66b3ff;
+}
+.exit{
+font-family:"Helvetica";
+  font-size:18px;
+  margin:30px;
+  padding:10px;
+  background-color:#66b3ff;
+  color:black;
+}

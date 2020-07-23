@@ -1,0 +1,74 @@
+body{
+font-family:sans-serif;
+color:white;
+}
+.container{
+height:630px;
+width:350px;
+background-color: #000033;
+transform:translate(400px,50px);
+position:absolute;
+margin-bottom:50px;
+}
+.head{
+	background-color:#000099;
+	border-radius:80px;
+	text-align:center;
+	padding:5px;
+}
+.head p{
+	font-size:20px;
+	font-family:"Helvetica";
+}
+.middle{
+	font-size:40px;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:#00004d;
+	text-align:center;
+}
+.bottom{
+	padding-left:10px;
+	padding-bottom:10px;
+	background-color:#fff;
+	color:#555;
+	margin:10px;
+}
+.bottom p{
+	font-size:20px;
+	text-align:center;
+}
+.cardno{
+	margin:10px;
+}
+.expirydate{
+	margin:10px;
+}
+.cvv{
+	margin:10px;
+}
+.name{
+	margin:10px;
+}
+.cvv input,.expirydate input
+{
+	width:100px;
+}
+input{
+	font-size:15px;
+	padding:10px;
+	height:30px;
+	border:1px solid;
+}
+#payment{
+	height:30px;
+	width:270px;
+	margin-top:20px;
+	background-color:#00004d;
+	text-align:center;
+	color:white;
+	cursor:pointer;
+	margin-left:10px;
+	margin-bottom:20px;
+	padding:3px;
+}

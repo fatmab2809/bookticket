@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Payment</title>
+	<link rel="stylesheet" type="text/css" href="paystyle.css">
+  </head>
+  <body>
+  
+  <div class="container">
+    <div class="head">
+    <p>---------PAYMENT---------</p>
+	</div>
+	<div class="middle" >
+	Rs <span id='amt'><span>
+	<script type="text/javascript">
+	 document.getElementById('amt').innerHTML=localStorage.getItem("money");
+	</script>
+	
+	</div>
+	<div class="bottom">
+	<form action="new_page.html" method="POST" >
+	  <p>Pay with Credit/Debit Card</p>
+	  <div class="cardno">
+	  <label for="cardnum">Card Number</label><br>
+	  <input type="text" id="cardnum" name="cardno" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="[0-9]{12,12}" required>
+	  </div>
+	  <div class="expirydate">
+	  <label for="exp">Expiry Date</label><br>
+	  <input type="number" id="exp-mm" placeholder="mm" pattern="[0-9]" min="01" max="12" required>
+	  <input type="number" id="exp-yyyy" placeholder="yyyy" pattern="[0-9]" min="2020" max="2030" required>
+	  </div>
+	  <div class="cvv">
+	  <label for="cvv">CVV/CVC No.</label><br>
+	  <input type="password" id="cvv" name="cvv" placeholder="xxx" pattern="[0-9]{3,3}" min=3 max=3 required>
+	  </div>
+	  <div class="name">
+	  <label for="name">Card Holder Name</label><br>
+	  <input type="text" id="name" name="name" pattern="[A-Z\s]+" required>
+	  
+	  <input type="submit" value="Pay now" id="payment" >
+	  </form>
+	  </div>
+	  
+	   
+  </div>
+  </body>
+</html>
